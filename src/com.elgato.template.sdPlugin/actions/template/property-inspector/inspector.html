@@ -3,60 +3,87 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>com.elgato.template Property Inspector</title>
+    <title>com.xsour.lostark Property Inspector</title>
     <link rel="stylesheet" href="../../../libs/css/sdpi.css" />
 </head>
 
 <body>
     <div class="sdpi-wrapper">
-        <div type="tabs" class="sdpi-item">
-            <div class="sdpi-item-label empty"></div>
-            <div class="tabs">
-                <div class="tab selected" data-target="#tab1" title="Show some inputs">Inputs</div>
-                <div class="tab" data-target="#tab2" title="Here's some text-areas">Text</div>
-            </div>
-        </div>
-        <hr class="tab-separator">
         <form id="property-inspector">
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">From when</div>
+                <input id="when" name="from" type="date" value="2023-07-22">
+            </div>
+            <hr class="tab-separator">
+            <div type="tabs" class="sdpi-item">
+                <div class="sdpi-item-label empty"></div>
+                <div class="tabs">
+                    <div class="tab selected" data-target="#tab1" title="Show some inputs">Day 1</div>
+                    <div class="tab" data-target="#tab2" title="Here's some text-areas">Day 2</div>
+                    <div class="tab" data-target="#tab3" title="Here's some text-areas">Day 3</div>
+                </div>
+            </div>
+            <hr class="tab-separator">
             <div id="tab1" class="tab-container">
                 <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="My name">Name</div>
-                    <input data-localize class="sdpi-item-value" name="name" type="text" value="" placeholder="Click Me" />
+                    <div data-localize class="sdpi-item-label" title="My name">Name 1</div>
+                    <input data-localize class="sdpi-item-value" name="name1" type="text" value=""
+                        placeholder="" />
                 </div>
-
-                <div type="textarea" class="sdpi-item">
-                    <div class="sdpi-item-label" data-localize title="My message">Message</div>
-                    <div class="sdpi-item-value textarea">
-                        <textarea
-                                  name="message"
-                                  type="textarea"
-                                  maxlength="50"
-                                  class="three-lines"></textarea>
-                    </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 2</div>
+                    <input data-localize class="sdpi-item-value" name="name2" type="text" value=""
+                        placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 3</div>
+                    <input data-localize class="sdpi-item-value" name="name3" type="text" value=""
+                        placeholder="" />
                 </div>
             </div>
             <div id="tab2" class="tab-container">
                 <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="More">More</div>
-                    <input data-localize class="sdpi-item-value" name="more" type="text" value="" placeholder="More info" />
+                    <div data-localize class="sdpi-item-label" title="My name">Name 4</div>
+                    <input data-localize class="sdpi-item-value" name="name4" type="text" value=""
+                        placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 5</div>
+                    <input data-localize class="sdpi-item-value" name="name5" type="text" value=""
+                        placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 6</div>
+                    <input data-localize class="sdpi-item-value" name="name6" type="text" value=""
+                        placeholder="" />
                 </div>
             </div>
+            <div id="tab3" class="tab-container">
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 7</div>
+                    <input data-localize class="sdpi-item-value" name="name7" type="text" value=""
+                        placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 8</div>
+                    <input data-localize class="sdpi-item-value" name="name8" type="text" value=""
+                        placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="My name">Name 9</div>
+                    <input data-localize class="sdpi-item-value" name="name9" type="text" value=""
+                        placeholder="" />
+                </div>
+            </div>
+
+
         </form>
-        <div class="sdpi-item">
-            <div class="sdpi-item-label" data-localize title="My button">Button</div>
-            <button
-                    class="sdpi-item-value"
-                    value="Click Me"
-                    data-localize
-                    id="open-external">
-                Click Me
-            </button>
-        </div>
+
+
     </div>
 
     <div class="sdpi-info-label hidden" style="top: -1000" value=""></div>

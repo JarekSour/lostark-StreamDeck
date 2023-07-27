@@ -30,9 +30,9 @@ window.sendToInspector = (data) => {
     console.log(data);
 };
 
-document.querySelector('#open-external').addEventListener('click', () => {
-    window.open('../../../external.html');
-});
+// document.querySelector('#open-external').addEventListener('click', () => {
+//     window.open('../../../external.html');
+// });
 
 
 /** 
